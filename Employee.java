@@ -52,6 +52,7 @@ public class Employee {
 	public Attendance getAttendance() {
 		return attendance;
 	}
+	//
 	public void showEmployeeDetails() {
 		System.out.println("company :"+companyName);
 		System.out.println("name :"+name);
