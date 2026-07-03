@@ -7,7 +7,7 @@ public class HRApplication {
 		System.out.println("== HR Payroll system stared ==");
 		//local variable
 		
-		int empId = 1;
+		int empId = 111;
 		String empName = "krishna";
 		double salary  = 60000.0;
 		
