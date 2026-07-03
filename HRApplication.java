@@ -1,0 +1,36 @@
+package Employyepayroll;
+
+public class HRApplication {
+
+	public static void main(String[] args) {
+		
+		System.out.println("== HR Payroll system stared ==");
+		//local variable
+		
+		int empId = 101;
+		String empName = "reddy";
+		double salary  = 50000.0;
+		
+		char grade = 'A';
+		
+		//object creation(Heap)
+
+		Employee employee = new Employee(empId, empName, salary,grade);
+		
+		//display emp details
+		
+		employee.showEmployeeDetails();
+		// geet Attendace
+		Attendance attendance = employee.getAttendance();
+		attendance.showAttendance();
+		int presentDays = attendance.getPresentDays();
+		
+		//payroll calcualtion
+		
+		PayRollService payrollService= new PayRollService();
+		double finalSalary  = payrollService.calculateSalary(employee.getBasesalary(), presentDays);
+		System.out.println("presnt day: "+presentDays);
+		System.out.println("final salary : "+finalSalary);
+		
+	}
+}
