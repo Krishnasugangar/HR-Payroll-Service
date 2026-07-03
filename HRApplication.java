@@ -31,5 +31,7 @@ public class HRApplication {
 		double finalSalary  = payrollService.calculateSalary(employee.getBasesalary(), presentDays);
 		System.out.println("presnt day: "+presentDays);
 		System.out.println("final salary : "+finalSalary);	
+
+			System.out.println("== HR Payroll system Ended ==");
 	}
 }
