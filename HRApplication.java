@@ -9,7 +9,7 @@ public class HRApplication {
 		
 		int empId = 1;
 		String empName = "krishna";
-		double salary  = 40000.0;
+		double salary  = 60000.0;
 		
 		char grade = 'A';
 		
