@@ -7,9 +7,9 @@ public class HRApplication {
 		System.out.println("== HR Payroll system stared ==");
 		//local variable
 		
-		int empId = 101;
-		String empName = "reddy";
-		double salary  = 50000.0;
+		int empId = 1;
+		String empName = "krishna";
+		double salary  = 40000.0;
 		
 		char grade = 'A';
 		
@@ -17,20 +17,19 @@ public class HRApplication {
 
 		Employee employee = new Employee(empId, empName, salary,grade);
 		
-		//display emp details
+		//display employee details
 		
 		employee.showEmployeeDetails();
-		// geet Attendace
+		// get Attendace
 		Attendance attendance = employee.getAttendance();
 		attendance.showAttendance();
 		int presentDays = attendance.getPresentDays();
 		
-		//payroll calcualtion
+		//payroll calculation
 		
 		PayRollService payrollService= new PayRollService();
 		double finalSalary  = payrollService.calculateSalary(employee.getBasesalary(), presentDays);
 		System.out.println("presnt day: "+presentDays);
-		System.out.println("final salary : "+finalSalary);
-		
+		System.out.println("final salary : "+finalSalary);	
 	}
 }
